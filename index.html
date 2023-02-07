@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- each html page needs a head and a body -->
+<head>
+	<title>Lists</title>
+</head>
+<body>
+	<!-- an ordered list that uses Roman numerals -->
+	<ol type="I">
+		<li>Manchester United
+			<ul>
+				<li>UEFA European Cup</li>
+				<li>UEFA Cup</li>
+				<li>UEFA Cup Winners' Cup</li>
+				<li>UEFA Super Cup</li>
+				<li>FIFA Club World Cup</li>
+			</ul>
+		</li>
+		<!-- the br tag is for a line break -->
+		<br>
+		<li>Manchester City
+			<ul>
+				<li>UEFA Cup Winners' Cup</li>
+			</ul>
+		</li>
+		<br>
+		<li>Liverpool
+			<ul>
+				<li>UEFA European Cup</li>
+				<li>UEFA Cup</li>
+				<li>UEFA Cup Winners' Cup</li>
+				<li>UEFA Super Cup</li>
+				<li>FIFA Club World Cup</li>
+			</ul>
+		</li>
+		<br>
+		<li>Everton
+			<ul>
+				<li>UEFA Cup Winners' Cup</li>
+			</ul>
+		</li>
+	</ol>
+	<ul>
+		<li>Newcastle United
+			<!-- an unordered list inside an unordered list will use a different bullet to its parent-->
+			<ul>
+				<li>UEFA Cup</li>
+				<li>UEFA Intertoto Cup</li>
+			</ul>
+		</li>
+		<br>
+		<li>Sunderland</li>
+	</ul>
+	<br>
+	<!-- horizontal rule -->
+	<hr>
+	<br>
+	<table border=2 width=600 cellpadding=10 cellspacing=5>
+		<!-- each tr is a new row -->
+		<tr>
+			<!-- th indicates the headers, which are auto-bold and centred -->
+			<th> <!--blank --> </th>
+			<th>MLB</th>
+			<th>MLS</th>
+			<th>NBA</th>
+			<th>NFL</th>
+			<th>NHL</th>
+		</tr>
+		<tr>
+			<!-- each td is a new column, these sit inside rows -->
+			<td>Philadelphia</td>
+			<td>Phillies</td>
+			<td>Union</td>
+			<td>76ers</td>
+			<td>Eagles</td>
+			<td>Flyers</td>
+		</tr>
+		<tr>
+			<td>Los Angeles</td>
+			<td>Dodgers</td>
+			<td>Galaxy</td>
+			<td>
+				<a 
+				href="https://en.wikipedia.org/wiki/Los_Angeles_Clippers" target="_blank">
+				Clippers
+				</a>
+			</td>
+			<td>Rams</td>
+			<td>Kings</td>
+		</tr>
+		<tr>
+			<td>Seattle</td>
+			<td>Mariners</td>
+			<td>Sounders</td>
+			<td></td>
+			<td>Seahawks</td>
+			<td>Kraken</td>
+		</tr>
+		<tr>
+			<td>Toronto</td>
+			<td>Blue Jays</td>
+			<td>FC</td>
+			<td>Raptors</td>
+			<!-- rowspan attr merges desired number of cells by row, note how this overwrites the first colspan below -->
+			<td rowspan="2"></td>
+			<td>Maple Leafs</td>
+		</tr>
+		<tr>
+			<td>San Antonio</td>
+			<!-- colspan attr over-written by rowspan above -->
+			<td colspan="2"></td>
+			<td>Spurs</td>
+			<!-- colspan attr merges desired number of cells by column-->
+			<td colspan="2"></td>
+		</tr>
+	</table>
+	<br>
+
+</body>
+</html>
