@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms and Controls</title>
+</head>
+<body>
+    <h1>Forms and Controls</h1>
+
+    <h3>Text and Password Input</h3>
+    <form>
+        <!-- forms need an input type -->
+        <p>
+            <input type="text"/>
+        </p>
+        
+        <p>
+            <!-- replaces inputted characters with a dot -->
+            <input type="password"/>
+        </p>
+    </form>
+
+    <h3>Text Area</h3>
+
+    <p>
+        <textarea cols="20" rows="4">Enter text</textarea>
+    </p>
+
+    <h3>Radio Buttons</h3>
+
+    <p>Favourite TV Channel:
+        <br>
+        <!-- the name attr groups items and allows single-select -->
+        <input type="radio" name="channel"/>Al Jazeera
+        <input type="radio" name="channel"/>BBC
+        <input type="radio" name="channel"/>Fox News
+        <br>
+        <input type="radio" name="channel"/>France 24
+        <input type="radio" name="channel"/>RTÉ
+        <input type="radio" name="channel"/>Sky News
+    </p>
+
+    <h3>Checkboxes</h3>
+    <p>Counties Visited:
+        <br>
+        <!-- allows multi-select -->
+        <input type="checkbox"/>Donegal
+        <input type="checkbox"/>Galway
+        <input type="checkbox"/>Leitrim
+        <br>
+        <input type="checkbox"/>Mayo
+        <input type="checkbox"/>Roscommon
+        <input type="checkbox"/>Sligo
+    </p>
+
+    <h3>Drop-Down Boxes</h3>
+    <!-- size determines how many rows are shown -->
+    <select size=3>
+        <!-- selected attr determines default selection -->
+        <option>Applied Databases</option>
+        <option>Computational Thinking and Algorithms</option>
+        <option>Computer Architecture and Technology Convergence</option>
+        <option>Fundamentals of Data Analysis</option>
+        <option>Programming for Data Analysis</option>
+        <option>Programming and Scripting</option>
+        <option selected="selected">Web Application Development</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <h3>Form Validation</h3>
+    <form>
+        <input type="email"/>
+        <input type="submit"/>
+    </form>
+    <br>
+    <form>
+        <input type="date"/>
+        <input type="submit"/>
+    </form>
+    <br>
+</body>
