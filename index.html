@@ -10,7 +10,7 @@
 		}
 		h1 {
 			color: red;
-			/* browser will use the first font that successfully loads */
+			/* browser will use the first font that successfully loads, Arial will only load if the first two aren't available */
 			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 		}
 		li {
@@ -20,19 +20,35 @@
 		table {
 			background-color: white;
 			color: blue;
+			font-size: 16px;
 		}
 		.united {
-			background-color: #000000;
-			color: white;
+			background-color: rgba(100,33,90,0.6);
+			color: #00FFFF;
+			/* the em font size adjusts the font size relative to that of the parent element, where 1em is equal
+			to the parent, and 2em double the parent's size, or default page if no parent size is specified */
+			font-size: 1.5em;
 		}
 		th.major {
 			/* classes and elements can be added together for extra specificity */
 			color: green;
 		}
+		td.major {
+			font-weight: bold;
+		}
 		#clubworld {
 			/* IDs are used to specify individual items */
 			background-color: green;
 			color: white;
+		}
+		a {
+			background-color: white;
+			text-decoration: none;
+		}
+		a:visited {
+			/* you can even amended elements by state */
+			background-color: black;
+			color: #FFFF11;
 		}
 	</style>
 </head>
