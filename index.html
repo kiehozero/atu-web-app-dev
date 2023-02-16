@@ -3,6 +3,38 @@
 <!-- each html page needs a head and a body -->
 <head>
 	<title>Lists</title>
+	<style type="text/css">
+		* {
+			/* star refers to all elements */
+			background-color: grey;
+		}
+		h1 {
+			color: red;
+			/* browser will use the first font that successfully loads */
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+		li {
+			background-color: yellow;
+			color: blue;
+		}
+		table {
+			background-color: white;
+			color: blue;
+		}
+		.united {
+			background-color: #000000;
+			color: white;
+		}
+		th.major {
+			/* classes and elements can be added together for extra specificity */
+			color: green;
+		}
+		#clubworld {
+			/* IDs are used to specify individual items */
+			background-color: green;
+			color: white;
+		}
+	</style>
 </head>
 <body>
 	<!-- link to external location -->
@@ -10,16 +42,17 @@
 	<!-- link to internal location -->
 	<a href="first.html">First</a>
 	<br>
+	<h1>Winners</h1>
 	<img src="images/old-logo.png" alt="Manchester United Old Crest" width=100>
 	<!-- an ordered list that uses Roman numerals -->
 	<ol type="I">
-		<li>Manchester United
+		<li class="united">Manchester United
 			<ul>
-				<li>UEFA European Cup</li>
-				<li>UEFA Cup</li>
-				<li>UEFA Cup Winners' Cup</li>
-				<li>UEFA Super Cup</li>
-				<li>FIFA Club World Cup</li>
+				<li class="united">UEFA European Cup</li>
+				<li class="united">UEFA Cup</li>
+				<li class="united">UEFA Cup Winners' Cup</li>
+				<li class="united">UEFA Super Cup</li>
+				<li id="clubworld">FIFA Club World Cup</li>
 			</ul>
 		</li>
 		<!-- the br tag is for a line break -->
@@ -66,8 +99,8 @@
 		<tr>
 			<!-- th indicates the headers, which are auto-bold and centred -->
 			<th> <!--blank --> </th>
-			<th>MLB</th>
-			<th>MLS</th>
+			<th class="major">MLB</th>
+			<th class="major">MLS</th>
 			<th>NBA</th>
 			<th>NFL</th>
 			<th>NHL</th>
@@ -75,16 +108,16 @@
 		<tr>
 			<!-- each td is a new column, these sit inside rows -->
 			<td>Philadelphia</td>
-			<td>Phillies</td>
-			<td>Union</td>
+			<td class="major">Phillies</td>
+			<td class="major">Union</td>
 			<td>76ers</td>
 			<td>Eagles</td>
 			<td>Flyers</td>
 		</tr>
 		<tr>
 			<td>Los Angeles</td>
-			<td>Dodgers</td>
-			<td>Galaxy</td>
+			<td class="major">Dodgers</td>
+			<td class="major">Galaxy</td>
 			<td>
 				<a 
 				href="https://en.wikipedia.org/wiki/Los_Angeles_Clippers" target="_blank">
@@ -96,16 +129,16 @@
 		</tr>
 		<tr>
 			<td>Seattle</td>
-			<td>Mariners</td>
-			<td>Sounders</td>
+			<td class="major">Mariners</td>
+			<td class="major">Sounders</td>
 			<td></td>
 			<td>Seahawks</td>
 			<td>Kraken</td>
 		</tr>
 		<tr>
 			<td>Toronto</td>
-			<td>Blue Jays</td>
-			<td>FC</td>
+			<td class="major">Blue Jays</td>
+			<td class="major">FC</td>
 			<td>Raptors</td>
 			<!-- rowspan attr merges desired number of cells by row, note how this overwrites the first colspan below -->
 			<td rowspan="2"></td>
