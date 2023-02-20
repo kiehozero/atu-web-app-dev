@@ -7,16 +7,32 @@
         color:red;
     }
     p {
+        /* using border longhand */
+        border-color: red;
+        border-style: solid;
+        border-width: 20px;
         color: blue;
+        height: 75%;
+        /* default margin is 16px*/ 
+        margin: 20px;
+        max-height: 300px;
+        /* scroll elements if the box is too small for content */
+        overflow: scroll;
+        padding: 10px;
+        width: 75%;
     }
     .para {
+        /* using border shorthand */ 
+        border: 3px solid red;
         background-color: lightgreen;
     }
     #p2 {
-        background-color: lightgrey
+        background-color: lightgrey;
+        margin: 10px;
+        padding: 20px;
     }
 </style>
-</head>
+
 <body>
 <h1>The World Wide Web</h1>
 <p class="para">The World Wide Web (abbreviated WWW or the Web) is an
