@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style="text/css"></style>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    /* script is conventionally added at the bottom so that everything else 
+    loads before it. It only really makes a difference when large scripts are
+    loaded but it is a good convention to observe nonetheless. */
+    var num1;
+    var num2;
+    num1 = Number(prompt("Enter a value:"));
+    num2 = Number(prompt("Enter another value:"));
+    var result = num1 * num2;
+    alert(num1 + " times " + num2 + " is " + result);
+
+    var myInput;
+    /* JS is case-sensitive, so myInput and myinput would be separate variables */
+    var myInput = prompt("Please enter your name:");
+    var greet = "Hello ";
+    document.write(greet + myInput);
+
+</script>
+</html>
