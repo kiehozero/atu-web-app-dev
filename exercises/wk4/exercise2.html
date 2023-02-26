@@ -13,6 +13,9 @@
             background-color: blue;
             color: white;
         }
+        .blue-border {
+            border: 2px solid blue;
+        }
         .lightblue {
             background-color: lightblue;
             color: blue;
@@ -55,34 +58,42 @@
             border-radius: 20px;
         }
         #seven {
-            /* no additional rules required */
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 30px;
         }
         #eight {
-            /* no additional rules required */
+            border: 5px double white;
+            border-top-right-radius: 30px;
         }
         #nine {
+            border: 5px groove white;
             /* no additional rules required */
         }
         #ten {
-            /* no additional rules required */
+            border: 5px dashed purple;
         }
         #eleven {
-            /* no additional rules required */
+            border: 5px dashed lightblue;
         }
         #twelve {
-            /* no additional rules required */
+            border-width: 5px;
         }
         #thirteen {
-            /* no additional rules required */
+           border: 5px dashed white;
         }
         #fourteen {
-            /* no additional rules required */
+            border-style: dashed;
+            border-bottom-color: orange;
+            border-left-color: purple;
+            border-right-color: purple;
+            border-top-color: orange;
         }
         #fifteen {
-            /* no additional rules required */
-        }
-        #sixteen {
-            /* no additional rules required */
+            border-radius: 100px;
+            border-style: dashed;
+            border-width: 1px;
         }
     </style>
 </head>
@@ -102,7 +113,7 @@ or more declarations separated by semicolons. Each declaration includes a CSS pr
 
     <p class="purple" id="seven">With CSS3, you can give any element "rounded corners", by using the border-radius property.</p>
 
-    <p class="blue" id="eight">With the CSS3 border-image property, you can set an image to be used as the border around an element.</p>
+    <p class="blue blue-border" id="eight">With the CSS3 border-image property, you can set an image to be used as the border around an element.</p>
 
     <p class="lightblue" id="nine">Flexible boxes, or flexbox, is a new layout mode in CSS3. Use of flexbox ensures that elements behave predictably when the page layout must
 accommodate different screen sizes and different display devices.</p>
@@ -120,5 +131,5 @@ content and the element border.</p>
 
     <p class="purple" id="fifteen">Creating transparent images with CSS is easy. The CSS opacity property is a part of the CSS3 recommendation.</p>
 
-    <p class="blue"id="sixteen">A pseudo-class is used to define a special state of an element</p>
+    <p class="blue">A pseudo-class is used to define a special state of an element</p>
 </body>
