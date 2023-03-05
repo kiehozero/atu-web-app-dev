@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions in JavaScript</title>
+    <style="text/css"></style>
+</head>
+
+<body>
+    <button id="clicker" onclick="sayHello()">Click me!</button>
+    <button id="clicker" onclick="getArea()">Click me too!</button>
+</body>
+
+<script>
+function sayHello () {
+    /* functions can't start with a number or using a reserved word */
+    alert('Hello');
+}
+function getArea() {
+    var num1 = prompt("Please provide a width:");
+    var num2 = prompt("Please provide a height");
+    alert(num1 * num2);
+}
+</script>
+</html>
