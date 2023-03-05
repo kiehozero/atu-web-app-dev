@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions in JavaScript</title>
+    <style="text/css"></style>
+</head>
+
+<body>
+    <h1 id="one">Heading 1</h1>
+    <h1 id="two">Heading 2</h1>
+    <h1 id="three">Heading 3</h1>
+
+    <h1 id="result">Enter your name below</h1>
+    <input id="in1">
+    <button onclick="myName()">Check name</button>
+</body>
+
+<script>
+var x = document.getElementById('two').innerHTML;
+alert(x);
+function myName() {
+    var y = document.getElementById('in1').value;
+    document.getElementById('result').innerHTML = "Hello " + y;
+    document.getElementById('two').style.color = "red";
+}
+</script>
+</html>
