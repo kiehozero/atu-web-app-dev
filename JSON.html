@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON in JavaScript</title>
+    <style="text/css"></style>
+</head>
+
+<body>
+
+</body>
+</html>
+
+<script>
+/* create object */
+let myObject = {
+    name: "Bob",
+    age: 25,
+    location: "New York"
+};
+/* converts to string then saves to local storage */
+let name1 = JSON.stringify(myObject);
+localStorage.jsonTest = name1;
+/* parses a string as an object, this and stringify are the two most common JSON operations */
+let nameObj = JSON.parse(name1);
+
+</script>

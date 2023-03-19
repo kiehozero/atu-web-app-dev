@@ -19,4 +19,8 @@
     localStorage.myMessage = message;
     /* this is shorthand, you can use the getItem() function to read an item from storage too */
     alert(localStorage.myMessage);
+    /* items are removed using removeItem() or when the user clears the cache manually */
+    localStorage.removeItem(myMessage);
+    /* same functions are available using sessionStorage, but data doesn't persist between different browser sessions */
+    sessionStorage.test = "Hello from session storage!";
 </script>
