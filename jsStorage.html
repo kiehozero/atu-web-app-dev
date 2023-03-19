@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Storage in JavaScript</title>
+    <style="text/css"></style>
+</head>
+
+<body>
+
+</body>
+</html>
+
+<script>
+
+/* can use HTML5's web storage feature to store up to 5mb of string data */
+    var message = "This is a message"
+
+    /* this is shorthand, you can use the setItem() function to save something to storage too */
+    localStorage.myMessage = message;
+    /* this is shorthand, you can use the getItem() function to read an item from storage too */
+    alert(localStorage.myMessage);
+</script>

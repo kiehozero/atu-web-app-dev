@@ -18,17 +18,12 @@
         this.color = carColor;
         this.reg = carReg;
         this.year = carYear;
+        /* object method, functions can be stored inside an object */
+        this.age = function() {return 2023 - this.year;}
     }
-    var car = {
-            type: "Nissan", 
-            model: "Micra", 
-            color: "Green", 
-            reg: "10 G 1234", 
-            year: 2010, 
-            /* object method to calculate age */
-            age: function(){return(2023 - car.year);}
-            }
-    alert(car.age);
+    var car1 = new NewCar("Ford", "Mondeo", "Red", "15-G-1234", 2015);
+    /* remember to include opening and closing brackets after a function */
+    alert(car1.age());
 
     
 </script>
