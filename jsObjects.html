@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects in JavaScript</title>
+    <style="text/css"></style>
+</head>
+
+<body>
+
+</body>
+</html>
+
+<script>
+    /* Object constructor - good practice to start obj constructors with upper-case letters */
+    function NewCar(carType, carModel, carColor, carReg, carYear) {
+        this.type = carType;
+        this.model = carModel;
+        this.color = carColor;
+        this.reg = carReg;
+        this.year = carYear;
+    }
+    var car = {
+            type: "Nissan", 
+            model: "Micra", 
+            color: "Green", 
+            reg: "10 G 1234", 
+            year: 2010, 
+            /* object method to calculate age */
+            age: function(){return(2023 - car.year);}
+            }
+    alert(car.age);
+
+    
+</script>
