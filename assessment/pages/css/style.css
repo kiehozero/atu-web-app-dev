@@ -1,0 +1,44 @@
+/* Non-Bootstrap CSS lives here */
+
+.btn {
+    /* over-riding default Bootstrap settings to give some extra margin to element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.carousel-control-next,
+a.carousel-control-prev {
+    /* adds an additional property to existing Bootstrap class */ 
+    color: black;
+}
+
+a.carousel-control-next:hover,
+a.carousel-control-prev:hover {
+    /* adds an additional property to existing Bootstrap class and state */ 
+    color: red;
+    font-weight: bold;
+
+}
+
+.carousel-item {
+    /* adds an additional property to existing Bootstrap classes */ 
+    display: table-cell;
+    text-align: center !important;
+    vertical-align: center !important;
+}
+
+.item-container {
+    padding-top: 50px;
+}
+
+.label-padding {
+    border: 20px;
+    padding: 20px;
+}
+
+.title-header {
+    /* adds padding between navbar and page heading */
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
