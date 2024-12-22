@@ -36,7 +36,7 @@ The below italicised and bolded items are each of the required items from the ex
 
 - **_Use the bootstrap version 5 framework (via CDN)._** Each HTML and EJS page contained a link to the Bootstrap 5 CDN within the page's 'head' element.
 
-## Bugfixes
+## Bugs and Fixes
 
 - I had a lot of trouble getting my default non-CSS page linked to into ExpressJS pages, until [StackOverflow](https://stackoverflow.com/questions/24582338/how-can-i-include-css-files-using-node-express-and-ejs#24582622) below reminded me that CSS files are static, and so are served from a single location determined by the 'app.use(express.static("pages"));' command.
 - I have saved the username/password sent to MySQL as 'root' and 'root123' in the index.js file. I was having trouble getting around some error messages, and I could see that other people in the module discussion forum had similar issues. With Michael's guidance, the simple fix outlined on [YouTube](https://youtu.be/W2TuIx2y4kw?si=SxXfN5TJfpBAzBl6) allowed this.
